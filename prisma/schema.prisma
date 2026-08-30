@@ -1,0 +1,61 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        String   @id @default(cuid())
+  username  String   @unique
+  password  String
+  createdAt DateTime @default(now())
+}
+
+model Article {
+  id         String   @id @default(cuid())
+  title      String
+  slug       String   @unique
+  excerpt    String   @db.Text
+  content    String   @db.LongText
+  coverImage String?
+  category   String   @default("Actualite")
+  published  Boolean  @default(false)
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+}
+
+model Photo {
+  id          String   @id @default(cuid())
+  url         String
+  title       String?
+  description String?  @db.Text
+  category    String   @default("Général")
+  order       Int      @default(0)
+  createdAt   DateTime @default(now())
+}
+
+model Project {
+  id          String   @id @default(cuid())
+  title       String
+  description String   @db.Text
+  status      String   @default("En cours")
+  odds        String   @default("[]")
+  coverImage  String?
+  photos      String   @db.Text
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model Contact {
+  id        String   @id @default(cuid())
+  name      String
+  email     String
+  phone     String?
+  subject   String
+  message   String   @db.Text
+  read      Boolean  @default(false)
+  createdAt DateTime @default(now())
+}
