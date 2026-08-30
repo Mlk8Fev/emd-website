@@ -92,6 +92,15 @@ SMTP_PASS="votre-mot-de-passe-application"
 
 4. Redémarrez le serveur
 
+## Déploiement de preview sur Vercel
+
+Pour un aperçu rapide (revue client, tests) avant la mise en ligne définitive sur Hostinger :
+
+1. Le dépôt est connecté à Vercel via GitHub — chaque push sur `main` déclenche un nouveau déploiement
+2. Une base MySQL gratuite (Aiven) est utilisée pour cette preview, indépendante de la base de production
+3. Variables d'environnement à renseigner dans Vercel (Settings → Environment Variables) : `DATABASE_URL`, `NEXTAUTH_SECRET`, `NEXTAUTH_URL`
+4. ⚠️ L'upload de photos/images depuis l'admin ne fonctionne pas sur Vercel (système de fichiers en lecture seule côté serverless) — cette fonctionnalité nécessite un stockage externe (Vercel Blob, S3...) qui n'est pas encore branché pour la preview
+
 ## Sécurité avant mise en ligne
 
 - Changez `NEXTAUTH_SECRET` dans `.env.local` par une valeur aléatoire et secrète
