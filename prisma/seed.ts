@@ -20,8 +20,8 @@ async function main() {
       title: "La Tombola Solidaire de l'ONG EMD : Un Succès pour les ODD",
       slug: "tombola-solidaire-emd-succes-odd",
       excerpt:
-        "L'ONG Ensemble pour un Monde Durable poursuit avec succès son premier grand projet : l'organisation d'une tombola solidaire dans le cadre d'une activité sportive communautaire à San Pedro.",
-      content: `<p>L'ONG Ensemble pour un Monde Durable poursuit avec succès son premier grand projet : l'organisation d'une tombola solidaire dans le cadre d'une activité sportive communautaire à San Pedro. Cette initiative innovante permet de mobiliser la communauté locale tout en finançant des actions directement liées aux Objectifs de Développement Durable.</p><p>Les fonds collectés sont destinés à des programmes d'aide aux populations vulnérables de la région. L'organisation remercie chaleureusement tous les participants et partenaires qui ont rendu possible cette belle aventure solidaire.</p><p>Restez connectés pour découvrir les résultats complets de cette campagne.</p>`,
+        "L'ONG Ensemble pour un Monde Durable poursuit avec succès son premier grand projet : l'organisation d'une tombola solidaire dans le cadre d'une activité sportive communautaire villageoise de Gabaguhé et de Zakéoua, dans la Sous-Préfecture de Grand-Zattry (région de la Nawa).",
+      content: `<p>L'ONG Ensemble pour un Monde Durable poursuit avec succès son premier grand projet : l'organisation d'une tombola solidaire dans le cadre d'une activité sportive communautaire villageoise de Gabaguhé et de Zakéoua, dans la Sous-Préfecture de Grand-Zattry (région de la Nawa). Cette initiative innovante permet de mobiliser la communauté locale tout en finançant des actions directement liées aux Objectifs de Développement Durable.</p><p>Les fonds collectés sont destinés à des programmes d'aide aux populations vulnérables de la région. L'organisation remercie chaleureusement tous les participants et partenaires qui ont rendu possible cette belle aventure solidaire.</p><p>Restez connectés pour découvrir les résultats complets de cette campagne.</p>`,
       category: "Projet",
       published: true,
     },
@@ -29,7 +29,7 @@ async function main() {
   console.log("✔ Article de la tombola créé");
 
   const domaineProjects = [
-    { title: "Développement Économique Rural", description: "Favoriser l'essor économique des populations rurales de San Pedro.", odds: JSON.stringify([1, 8, 10]) },
+    { title: "Développement Économique Rural", description: "Favoriser l'essor économique des populations rurales.", odds: JSON.stringify([1, 8, 10]) },
     { title: "Éducation & Formation", description: "Promouvoir l'éducation, la formation et l'autonomisation des jeunes et des femmes.", odds: JSON.stringify([4, 5, 10]) },
     { title: "Environnement & Climat", description: "Protéger l'environnement et lutter contre les changements climatiques.", odds: JSON.stringify([13, 15]) },
     { title: "Santé Communautaire", description: "Promouvoir la santé communautaire pour les populations vulnérables.", odds: JSON.stringify([3]) },
@@ -64,7 +64,7 @@ async function main() {
       data: {
         title: "Tombola Solidaire — Sport & Développement Durable",
         description:
-          "Dans le cadre de sa première grande initiative, l'ONG Ensemble pour un Monde Durable a participé à une activité sportive communautaire à San Pedro. À l'occasion de cet événement, l'ONG a organisé une tombola solidaire dont les bénéfices ont été entièrement reversés à des actions alignées sur les Objectifs de Développement Durable.",
+          "Dans le cadre de sa première grande initiative, l'ONG Ensemble pour un Monde Durable a participé à une activité sportive communautaire villageoise de Gabaguhé et de Zakéoua dans la Sous-Préfecture de Grand-Zattry, région de la Nawa. À l'occasion de cet événement, l'ONG a organisé une tombola solidaire dont les bénéfices ont été entièrement reversés à des actions alignées sur les Objectifs de Développement Durable.",
         status: "En cours",
         odds: JSON.stringify([1, 2, 3, 4, 8, 10, 11, 17]),
         photos: "[]",

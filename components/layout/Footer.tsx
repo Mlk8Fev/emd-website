@@ -19,7 +19,7 @@ export function Footer() {
       <div className="container grid grid-cols-1 gap-10 py-16 sm:grid-cols-2 lg:grid-cols-4">
         <div>
           <Link href="/" className="flex items-center gap-3">
-            <Logo variant="mark" monochrome="light" className="h-12 w-12" />
+            <Logo variant="mark" className="h-14 w-14" />
             <span className="font-heading text-sm font-extrabold leading-tight text-white">
               ENSEMBLE POUR UN
               <br />
@@ -33,6 +33,8 @@ export function Footer() {
                 key={s.label}
                 href={s.href}
                 aria-label={s.label}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 transition-colors hover:bg-emd-or hover:text-emd-vert-fonce"
               >
                 <SocialIcon name={s.icon} className="h-4 w-4" />

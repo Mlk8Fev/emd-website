@@ -8,7 +8,7 @@ export function PcaSection() {
     <section id="pca" className="scroll-mt-28 bg-white py-24">
       <div className="container grid items-center gap-12 lg:grid-cols-[auto_1fr]">
         <AnimatedSection className="flex flex-col items-center">
-          <PortraitPlaceholder size={200} />
+          <PortraitPlaceholder size={240} src="/images/pca.webp" alt="Photo de EBAKPOLE ANTOINE, Président du Conseil d'Administration" />
           <h3 className="mt-5 text-center font-heading text-lg font-bold text-emd-vert-fonce">
             EBAKPOLE ANTOINE
           </h3>

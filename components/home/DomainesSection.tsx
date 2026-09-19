@@ -35,7 +35,7 @@ export function DomainesSection() {
         <SectionTitle
           eyebrow="Notre Champ d'Action"
           title="Nos Domaines d'Intervention"
-          subtitle="Neuf domaines complémentaires pour un développement durable et inclusif des communautés de San Pedro."
+          subtitle="Neuf domaines complémentaires pour un développement durable et inclusif des communautés locales."
         />
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {DOMAINES.map((domaine, i) => {

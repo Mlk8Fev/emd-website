@@ -30,7 +30,7 @@ const lora = Lora({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://ensemble-monde-durable.org"),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://www.ong-emd.com"),
   title: {
     default: "Ensemble pour un Monde Durable | ONG - San Pedro, Côte d'Ivoire",
     template: "%s | Ensemble pour un Monde Durable",
@@ -49,10 +49,25 @@ export const metadata: Metadata = {
     title: "Ensemble pour un Monde Durable",
     description:
       "ONG ivoirienne dédiée au développement local durable à San Pedro, Côte d'Ivoire, œuvrant pour les 17 Objectifs de Développement Durable.",
-    url: "https://ensemble-monde-durable.org",
+    url: "/",
     siteName: "Ensemble pour un Monde Durable",
     locale: "fr_CI",
     type: "website",
+    images: [
+      {
+        url: "/images/og-emd.jpg",
+        width: 1200,
+        height: 630,
+        alt: "ONG Ensemble pour un Monde Durable — Agir ensemble aujourd'hui pour un avenir durable demain",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Ensemble pour un Monde Durable",
+    description:
+      "ONG ivoirienne dédiée au développement local durable et aux Objectifs de Développement Durable, basée à San Pedro.",
+    images: ["/images/og-emd.jpg"],
   },
 };
 

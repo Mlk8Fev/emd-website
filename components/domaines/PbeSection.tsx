@@ -2,13 +2,14 @@ import { Quote } from "lucide-react";
 import { AnimatedSection } from "@/components/shared/AnimatedSection";
 import { PortraitPlaceholder } from "@/components/shared/PortraitPlaceholder";
 import { PBE_MESSAGE } from "@/lib/data";
+import { findPortrait } from "@/lib/portraits";
 
 export function PbeSection() {
   return (
     <section className="bg-white py-24">
       <div className="container grid items-center gap-12 lg:grid-cols-[auto_1fr]">
         <AnimatedSection className="flex flex-col items-center">
-          <PortraitPlaceholder size={200} />
+          <PortraitPlaceholder size={240} src={findPortrait("pbe")} alt="Photo de ERIC KOUASSI, Président du Bureau Exécutif" />
           <h3 className="mt-5 text-center font-heading text-lg font-bold text-emd-vert-fonce">
             ERIC KOUASSI
           </h3>

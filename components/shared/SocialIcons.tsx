@@ -1,10 +1,10 @@
 export type SocialName = "facebook" | "instagram" | "twitter" | "linkedin";
 
+// Seuls les réseaux dont le client a fourni le lien sont affichés.
+// Pour en ajouter (Instagram, X...), ajouter une entrée ici : les icônes existent déjà.
 export const SOCIALS: { icon: SocialName; href: string; label: string }[] = [
-  { icon: "facebook", href: "#", label: "Facebook" },
-  { icon: "instagram", href: "#", label: "Instagram" },
-  { icon: "twitter", href: "#", label: "Twitter / X" },
-  { icon: "linkedin", href: "#", label: "LinkedIn" },
+  { icon: "facebook", href: "https://www.facebook.com/share/1Cuh6k6F6A", label: "Facebook" },
+  { icon: "linkedin", href: "https://www.linkedin.com/in/ensemble-monde-durable-618bb2433", label: "LinkedIn" },
 ];
 
 const PATHS: Record<SocialName, string> = {

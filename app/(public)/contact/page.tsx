@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import { Clock, Mail, MapPin, Phone } from "lucide-react";
 import { AnimatedSection } from "@/components/shared/AnimatedSection";
 import { ContactForm } from "@/components/shared/ContactForm";
+import { IdentityBanner } from "@/components/shared/IdentityBanner";
 import { CONTACT_INFO } from "@/lib/data";
 
 export const metadata: Metadata = {
@@ -30,6 +31,11 @@ export default function ContactPage() {
       </div>
 
       <section className="bg-white py-24">
+        <div className="container mb-16">
+          <AnimatedSection>
+            <IdentityBanner />
+          </AnimatedSection>
+        </div>
         <div className="container grid gap-14 lg:grid-cols-[1.4fr_1fr]">
           <AnimatedSection>
             <div className="rounded-card bg-emd-gris-leger p-8 shadow-soft sm:p-10">

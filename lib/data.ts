@@ -54,7 +54,7 @@ export const DOMAINES: Domaine[] = [
     slug: "developpement-economique-rural",
     title: "Développement Économique Rural",
     icon: "Sprout",
-    short: "Favoriser l'essor économique des populations rurales de San Pedro.",
+    short: "Favoriser l'essor économique des populations rurales.",
     description:
       "Nous œuvrons pour le développement économique et social des populations rurales, en soutenant l'entrepreneuriat local et les activités génératrices de revenus, afin de bâtir des communautés résilientes et prospères.",
     odds: [1, 8, 10],
@@ -149,7 +149,7 @@ export const MISSIONS = [
 export const CADRE_LOGIQUE = [
   {
     niveau: "Impact",
-    description: "Développement durable des communautés de San Pedro",
+    description: "Développement durable des communautés",
     indicateurs: "Taux de développement communautaire",
     sources: "Rapports annuels",
     hypotheses: "Volonté politique",
@@ -245,11 +245,11 @@ export const TOMBOLA_PROJECT = {
   title: "Tombola Solidaire — Sport & Développement Durable",
   status: "En cours",
   description:
-    "Dans le cadre de sa première grande initiative, l'ONG Ensemble pour un Monde Durable a participé à une activité sportive communautaire à San Pedro. À l'occasion de cet événement, l'ONG a organisé une tombola solidaire dont les bénéfices ont été entièrement reversés à des actions alignées sur les Objectifs de Développement Durable. Ce projet illustre parfaitement l'approche de l'ONG : transformer chaque occasion de rassemblement en opportunité de développement.",
+    "Dans le cadre de sa première grande initiative, l'ONG Ensemble pour un Monde Durable a participé à une activité sportive communautaire villageoise de Gabaguhé et de Zakéoua dans la Sous-Préfecture de Grand-Zattry, région de la Nawa. À l'occasion de cet événement, l'ONG a organisé une tombola solidaire dont les bénéfices ont été entièrement reversés à des actions alignées sur les Objectifs de Développement Durable. Ce projet illustre parfaitement l'approche de l'ONG : transformer chaque occasion de rassemblement en opportunité de développement.",
   odds: [1, 2, 3, 4, 8, 10, 11, 17],
   timeline: [
     { step: "Création de l'ONG", detail: "18 mai 2026" },
-    { step: "Activité sportive", detail: "Participation communautaire à San Pedro" },
+    { step: "Activité sportive", detail: "Participation communautaire à Gabaguhé et Zakéoua (Grand-Zattry)" },
     { step: "Tombola solidaire", detail: "Organisation et vente des tickets" },
     { step: "Collecte des fonds", detail: "Rassemblement des bénéfices" },
     { step: "Redistribution & impact", detail: "Financement d'actions ODD" },

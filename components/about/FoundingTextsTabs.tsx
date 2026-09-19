@@ -5,6 +5,7 @@ import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { AnimatedSection } from "@/components/shared/AnimatedSection";
 import { SectionTitle } from "@/components/shared/SectionTitle";
 import { MISSIONS, CADRE_LOGIQUE, OBJECTIFS_TIMELINE } from "@/lib/data";
+import { StatutsReglement } from "@/components/about/StatutsReglement";
 
 export function FoundingTextsTabs() {
   return (
@@ -18,6 +19,7 @@ export function FoundingTextsTabs() {
             <TabsTrigger value="missions">Nos Missions</TabsTrigger>
             <TabsTrigger value="objectifs">Nos Objectifs</TabsTrigger>
             <TabsTrigger value="cadre">Cadre Logique</TabsTrigger>
+            <TabsTrigger value="statuts">Statuts &amp; Règlement</TabsTrigger>
           </TabsList>
 
           <TabsContent value="vision" className="w-full max-w-3xl">
@@ -102,6 +104,10 @@ export function FoundingTextsTabs() {
                 </table>
               </div>
             </AnimatedSection>
+          </TabsContent>
+
+          <TabsContent value="statuts" className="w-full max-w-4xl">
+            <StatutsReglement />
           </TabsContent>
         </Tabs>
       </div>

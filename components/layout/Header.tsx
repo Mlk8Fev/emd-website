@@ -61,7 +61,7 @@ export function Header() {
     >
       <div className="container flex h-20 items-center justify-between">
         <Link href="/" className="flex items-center gap-3">
-          <Logo variant="mark" className="h-11 w-11" />
+          <Logo variant="mark" priority className="h-14 w-14" />
           <span
             className={cn(
               "font-heading text-sm font-extrabold leading-tight sm:text-base",

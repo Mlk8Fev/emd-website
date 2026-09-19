@@ -40,7 +40,7 @@ export function HeroSection() {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1, delay: 0.2 }}
         >
-          <Logo variant="full" monochrome="light" className="h-40 w-40 sm:h-48 sm:w-48" />
+          <Logo variant="full" priority className="h-40 w-40 shadow-2xl ring-4 ring-white/30 sm:h-48 sm:w-48" />
         </motion.div>
 
         <motion.h1

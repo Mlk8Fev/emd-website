@@ -1,6 +1,7 @@
 import { prisma } from "@/lib/prisma";
 import { HeroSection } from "@/components/home/HeroSection";
 import { StatsSection } from "@/components/home/StatsSection";
+import { BannerSection } from "@/components/home/BannerSection";
 import { AboutSection } from "@/components/home/AboutSection";
 import { DomainesSection } from "@/components/home/DomainesSection";
 import { ProjetPhareSection } from "@/components/home/ProjetPhareSection";
@@ -21,6 +22,7 @@ export default async function HomePage() {
     <>
       <HeroSection />
       <StatsSection />
+      <BannerSection />
       <AboutSection />
       <DomainesSection />
       <ProjetPhareSection />
