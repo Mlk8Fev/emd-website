@@ -1,6 +1,11 @@
 import type { NextAuthConfig } from "next-auth";
 
 export const authConfig = {
+  // Nécessaire hors Vercel (Hostinger, VPS...) : Auth.js ne fait confiance
+  // au header Host que sur Vercel par défaut, sinon il rejette les requêtes
+  // avec "UntrustedHost". Sûr ici : le domaine est fixé par nous (NEXTAUTH_URL),
+  // pas par un utilisateur.
+  trustHost: true,
   pages: {
     signIn: "/admin/login",
   },
