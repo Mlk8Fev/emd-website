@@ -15,7 +15,7 @@ export function StatsSection() {
               <MapPin className="h-7 w-7 text-emd-vert-fonce" />
             </div>
             <span className="font-heading text-sm font-semibold uppercase tracking-wide text-emd-gris-texte">
-              San Pedro — Zone d&apos;Intervention
+              San Pedro — Siège de l&apos;ONG
             </span>
           </div>
         </AnimatedSection>
